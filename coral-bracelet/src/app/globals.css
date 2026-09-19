@@ -1,0 +1,276 @@
+@import "tailwindcss";
+
+/* =========================================================
+   CORAL BRACELET - GLOBAL STYLES
+   Luxury Jewelry Theme
+   Heading: DM Serif Display
+   Body: Manrope
+   ========================================================= */
+
+:root {
+  /* Main colors */
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+
+  /* Cards */
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+
+  /* Popovers */
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+
+  /* Primary */
+  --primary: #6e3cbc;
+  --primary-foreground: #ffffff;
+
+  /* Secondary */
+  --secondary: #f8d3e0;
+  --secondary-foreground: #1a1a1a;
+
+  /* Muted */
+  --muted: #f6f3f8;
+  --muted-foreground: #6f6875;
+
+  /* Accent */
+  --accent: #e8d8ff;
+  --accent-foreground: #1a1a1a;
+
+  /* Error */
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+
+  /* Borders */
+  --border: #e7dfeb;
+  --input: #e7dfeb;
+  --ring: #6e3cbc;
+
+  /* Radius */
+  --radius: 0.75rem;
+
+  /* Coral Bracelet Brand Palette */
+  --coral-purple: #6e3cbc;
+  --coral-pink: #f8d3e0;
+  --coral-lavender: #e8d8ff;
+  --coral-gold: #d4af37;
+  --coral-dark: #1a1a1a;
+
+  /* Soft luxury shades */
+  --coral-cream: #fcf9fd;
+  --coral-soft-purple: #f5effb;
+  --coral-soft-pink: #fff5f8;
+}
+
+@theme inline {
+  /* Colors used by Tailwind / ShadCN */
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Radius */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Connect Tailwind font utilities */
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-heading);
+}
+
+/* =========================================================
+   GLOBAL RESET
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* =========================================================
+   PREMIUM TYPOGRAPHY
+   ========================================================= */
+
+/* Main luxury headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: var(--font-heading), serif;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+/* Body text */
+
+p {
+  margin: 0;
+  font-family: var(--font-body), sans-serif;
+}
+
+/* Buttons and form elements */
+
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-body), sans-serif;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+/* =========================================================
+   TEXT SELECTION
+   ========================================================= */
+
+::selection {
+  background: var(--coral-lavender);
+  color: var(--coral-dark);
+}
+
+/* =========================================================
+   PREMIUM SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--coral-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--coral-purple);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5b2fa0;
+}
+
+/* =========================================================
+   IMAGE STYLING
+   ========================================================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================================
+   UTILITY CLASSES
+   ========================================================= */
+
+.font-luxury {
+  font-family: var(--font-heading), serif;
+}
+
+.font-modern {
+  font-family: var(--font-body), sans-serif;
+}
+
+.text-gold {
+  color: var(--coral-gold);
+}
+
+.bg-gold {
+  background-color: var(--coral-gold);
+}
+
+.text-brand-purple {
+  color: var(--coral-purple);
+}
+
+.bg-brand-purple {
+  background-color: var(--coral-purple);
+}
+
+.bg-brand-pink {
+  background-color: var(--coral-pink);
+}
+
+.bg-brand-lavender {
+  background-color: var(--coral-lavender);
+}
+
+/* =========================================================
+   LUXURY GRADIENT
+   ========================================================= */
+
+.coral-gradient {
+  background: linear-gradient(
+    135deg,
+    #6e3cbc 0%,
+    #8f5ed1 45%,
+    #f8d3e0 100%
+  );
+}
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--coral-purple);
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   SMOOTH PAGE EXPERIENCE
+   ========================================================= */
+
+html,
+body {
+  overflow-x: hidden;
+}
