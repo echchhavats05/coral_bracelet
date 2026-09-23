@@ -11,12 +11,19 @@
   "dependencies": {
     "@base-ui/react": "^1.8.0",
     "@next/font": "^14.2.15",
+    "bcryptjs": "^3.0.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cn": "^0.3.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.1",
     "embla-carousel-react": "^8.6.0",
+    "express": "^5.2.1",
     "framer-motion": "^13.3.0",
+    "jsonwebtoken": "^9.0.3",
     "lucide-react": "^1.45.0",
+    "mongoose": "^9.10.1",
+    "multer": "^2.4.0",
     "next": "16.3.5",
     "react": "19.2.8",
     "react-countup": "^6.5.3",
@@ -34,7 +41,13 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
+    "nodemon": "^3.1.14",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
